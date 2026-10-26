@@ -1,0 +1,11 @@
+[project]
+name = "transcriber"
+version = "0.1.0"
+description = "Transcribe Windows Sound Recorder recordings and generate AI summaries into an Obsidian vault"
+requires-python = ">=3.12"
+dependencies = [
+    "faster-whisper>=1.0.0",
+    # faster-whisper is not compatible with PyAV >= 15; 14.2.0 is the last
+    # version that ships a prebuilt wheel
+    "av==14.2.0",
+]
