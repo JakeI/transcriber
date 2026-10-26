@@ -30,7 +30,7 @@ from pathlib import Path
 TRANSCRIPT_PREFIX = "Transcript from "
 SUMMARY_PREFIX = "Summary from "
 VAULT_EXCLUDE_DIRS = {".obsidian", ".trash", ".git", ".smart-env"}
-MAX_VAULT_PAGES = 3000
+MAX_VAULT_PAGES = 6000
 OPENCODE_TIMEOUT = 900  # seconds per summary
 
 
