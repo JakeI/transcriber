@@ -134,32 +134,27 @@ Rules:
 - Write the summary in the same language as the transcript.
 - Start your output directly with the "# ..." heading line. No preamble, no closing remarks, and do not wrap the note in a code fence.
 
-Structure the note exactly like this:
-1. `# <A descriptive title for the meeting>`
-2. `## Participants` - a markdown table listing the potential participants:
+The following structure is a suggestion, not a rigid template. Adapt it to
+what the transcript actually contains and keep the note as short as the
+content allows:
+- `# <A descriptive title for the meeting>`
+- `## Participants` - a markdown table with a "Participant" and a "Role / Notes" column. If a participant likely has a page in the vault, link them as [[First Last, Institution]] (matching the vault page list below, e.g. [[Jochen Illerhaus, IRS]]). If it can be distinguished, separate the people who actually took part from people who were only mentioned or discussed (e.g. two rows or a short note); do not present mentioned people as attendees. If no participants can be identified, omit the section.
+- `## Summary` - a short overview, at most 3-5 sentences.
+- `## Details` - the most important points as concise bullet points, grouped by topic. When a task, action item or responsibility comes up, only name a person if the transcript actually says who it is; it is fine to list a task without an assignee rather than inventing one.
 
-   | Participant | Role / Notes |
-   | --- | --- |
-
-   IMPORTANT: every person's name must be an Obsidian wiki link in double
-   square brackets: write [[Jochen Illerhaus, IRS]], NEVER plain text like
-   Jochen Illerhaus, IRS. When a person likely has a page in the vault, use
-   that page's exact name (see the vault page list below). Otherwise make up
-   a well-formed link like [[Maria Muster, Institution]].
-3. `## Summary` - a short overview, at most 3-5 sentences.
-4. `## Details` - the most important points as concise bullet points, grouped by topic.
-
-Wherever a person from the vault page list is mentioned anywhere in the note,
-always refer to them as a wiki link [[...]], not as plain text.
-Never omit any of the four sections or their headings, even if there is
-nothing to report - keep the section with its heading and state briefly why
-it is empty.
+Omit any section that does not make sense for the content instead of padding
+it with filler or speculation. Never invent facts: if the transcript does not
+say who attended a meeting, who is responsible for a task, or who a name
+belongs to, leave it out or state the uncertainty briefly. A short note with
+title and a few sentences is perfectly acceptable for trivial content.
 
 Style: be short, direct and to the point. No filler phrases, no hedging, no
-repetition, no concluding pleasantries. Prefer tight bullet points over prose.
-Do not make the Details section longer than necessary to capture the facts.
+repetition, no concluding pleasantries. Prefer tight bullet points and structured
+headings over prose.
 
-Pay particular emphasis on dates and deadlines: format every date you mention with the Obsidian link syntax [[YYYY-MM-DD]].
+Whatever sections you keep: every date you mention must use the Obsidian link
+syntax [[YYYY-MM-DD]], and every person must be referenced as a wiki link
+[[...]] (matching vault page names where possible), never as plain text.
 Only include a mermaid diagram (```mermaid code block) if it genuinely adds value, e.g. a timeline for a meeting with many dates or deadlines.
 
 End your output with exactly one last line in this format:
